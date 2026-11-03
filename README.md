@@ -1,32 +1,32 @@
-# Branch Chat releases
+# Twigum releases
 
-**Branch Chat** is a small, private, end-to-end encrypted chat for families, friends and groups.
+**Twigum** is a small, private, end-to-end encrypted chat for families, friends and groups.
 Messages, photos and files are encrypted on your device; the server only stores ciphertext.
-Start at **https://branchchat.app**, or run your own server with the packages below.
+Start at **https://twigum.app**, or run your own server with the packages below.
 
 This repository only hosts release downloads. Get the newest version at
-**https://github.com/NexusMcNexis/branch-chat-releases/releases/latest**.
+**https://github.com/NexusMcNexis/twigum-releases/releases/latest**.
 
-## Downloads (26.10.11.4)
+## Downloads (26.11.0202)
 
 | Platform | File | Notes |
 |---|---|---|
-| Android | `BranchChat-26.10.11.4.apk` | Open the file on your phone and allow installs from your browser. Installs over older versions; you stay signed in |
-| Linux x86_64 | `BranchChat-26.10.11.4-x86_64.AppImage` | Any distro: `chmod +x` and run (needs FUSE 2, or use `--appimage-extract-and-run`). Updates itself |
-| Linux arm64 | `BranchChat-26.10.11.4-arm64.AppImage` | Raspberry Pi 4/5 (64-bit OS) and other arm64 desktops |
-| Debian / Ubuntu | `BranchChat-26.10.11-amd64.deb` (in the v26.10.11 release) | `sudo apt install ./BranchChat-26.10.11-amd64.deb` |
-| Fedora / openSUSE | `BranchChat-26.10.11-x86_64.rpm` (in the v26.10.11 release) | `sudo dnf install ./BranchChat-26.10.11-x86_64.rpm` |
-| Linux (portable) | `BranchChat-26.10.11-x64.tar.gz`, `BranchChat-26.10.11-arm64.tar.gz` (in the v26.10.11 release) | Extract anywhere and run `./branch-chat` |
+| Android | `Twigum-26.11.0202.apk` | Open the file on your phone and allow installs from your browser. Installs over older versions; you stay signed in |
+| Windows | `Twigum-26.11.0202-x64.exe`, `Twigum-26.11.0202-x64.msi` | Run the installer. Updates itself |
+| Linux x86_64 | `Twigum-26.11.0202-x86_64.AppImage` | Any distro: `chmod +x` and run (needs FUSE 2, or use `--appimage-extract-and-run`). Updates itself |
+| Linux arm64 | `Twigum-26.11.0202-arm64.AppImage` | Raspberry Pi 4/5 (64-bit OS) and other arm64 desktops |
+| Debian / Ubuntu | `Twigum-26.11.0202-amd64.deb`, `Twigum-26.11.0202-arm64.deb` | `sudo apt install ./Twigum-26.11.0202-amd64.deb` |
+| Fedora / openSUSE | `Twigum-26.11.0202-x86_64.rpm`, `Twigum-26.11.0202-aarch64.rpm` | `sudo dnf install ./Twigum-26.11.0202-x86_64.rpm` |
+| Linux (portable) | `Twigum-26.11.0202-x64.tar.gz`, `Twigum-26.11.0202-arm64.tar.gz` | Extract anywhere and run the app inside |
 | Server (native / Docker) | `branch-chat-server-<version>-install.tar.gz`, `branch-chat-server-<version>-docker-compose.tar.gz` | In the releases that include server packages (see below) |
-| iPhone / iPad | coming soon | Use https://branchchat.app in your browser for now |
-| Windows / macOS | coming soon | Use https://branchchat.app in your browser for now |
+| iPhone / iPad / Mac | coming soon | Use https://twigum.app in your browser for now |
 
-Every release includes a checksum file (`SHA256SUMS-26.10.11.4.txt` for this one). Check a download with
-`sha256sum -c SHA256SUMS-26.10.11.4.txt --ignore-missing`.
+Every release includes a checksum file (`SHA256SUMS.txt`). Check a download with
+`sha256sum -c SHA256SUMS.txt --ignore-missing`.
 
 ## Desktop app
-Opens **branchchat.app** first. Choose *Use my own server* to connect to any Branch Chat server, and add or switch
-servers later in *Branch Chat → Servers…* (Ctrl+Shift+S). Requirements: 64-bit Linux with a desktop environment
+Opens **twigum.app** first. Choose *Use my own server* to connect to any Twigum server, and add or switch
+servers later in *Twigum → Servers…* (Ctrl+Shift+S). Requirements: 64-bit Linux with a desktop environment
 (GTK 3, NSS, libnotify are standard on most distributions).
 
 ## Run your own server
@@ -61,12 +61,12 @@ Full guide: `docs/self-hosting.md` inside the package, plus `docs/server/raspber
 One version number for everything: `YY.MM.PATCH` (26.10 = October 2026). Apps and servers work together when the
 first two numbers match. Servers report theirs at `/api/version`.
 
-## Support BranchChat
-BranchChat is free, with no ads and no selling your data. If you'd like to help cover hosting and development,
+## Support Twigum
+Twigum is free, with no ads and no selling your data. If you'd like to help cover hosting and development,
 you can leave an optional tip on [Ko-fi](https://ko-fi.com/branchchat). Thank you! 💙
 
 ## License
 All rights reserved. A license has not been chosen yet. Until one is published here, you may download and run these
 releases for your own use, but no other rights are granted.
 
-© 2026 BranchChat. Branch Chat™ is a trademark of BranchChat.
+© 2026 Twigum. Twigum™ is a trademark of Twigum.
