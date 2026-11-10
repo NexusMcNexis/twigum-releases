@@ -63,7 +63,7 @@ first two numbers match. Servers report theirs at `/api/version`.
 
 ## Support Twigum
 Twigum is free, with no ads and no selling your data. If you'd like to help cover hosting and development,
-you can leave an optional tip on [Ko-fi](https://ko-fi.com/branchchat). Thank you! 💙
+you can leave an optional tip on [Ko-fi](https://ko-fi.com/twigum). Thank you! 💙
 
 ## License
 All rights reserved. A license has not been chosen yet. Until one is published here, you may download and run these
