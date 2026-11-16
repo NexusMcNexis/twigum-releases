@@ -57,6 +57,23 @@ docker compose build && docker compose up -d
 ```
 Full guide: `docs/self-hosting.md` inside the package, plus `docs/server/raspberry-pi.md` and `docs/server/proxmox.md`.
 
+## Release signing key
+
+Server releases come with a `SHA256SUMS` file signed by the Twigum release key. `twigum-server upgrade` checks that signature before it installs anything.
+
+- Fingerprint: `SHA256:fVzNG353/Choc/GUKp8THm8wW2mEA1bk5FG+jfimzXs` (Ed25519)
+- Public key: [keys/release-signing.pub](keys/release-signing.pub)
+- allowed_signers file: [keys/allowed_signers](keys/allowed_signers)
+
+To check a release yourself:
+
+```
+ssh-keygen -Y verify -f allowed_signers -I twigum-release -n twigum-release -s SHA256SUMS.sig < SHA256SUMS
+sha256sum -c SHA256SUMS
+```
+
+`DOCS-SHA256SUMS` (Self-Hosting Guide checksums) is not signed and is never used by upgrade.
+
 ## Versions
 One version number for everything: `YY.MM.PATCH` (26.10 = October 2026). Apps and servers work together when the
 first two numbers match. Servers report theirs at `/api/version`.
